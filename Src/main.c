@@ -145,10 +145,10 @@ int main(void)
   {
 		TestDATA++;
 		len = sprintf(MSG,"Roll=%d\r",TestDATA);
-	//HAL_UART_Transmit(&huart4,(uint8_t*)MSG,len,HAL_MAX_DELAY);
+   	HAL_UART_Transmit(&huart4,(uint8_t*)MSG,len,HAL_MAX_DELAY);
 		HAL_Delay (2000);
 		
-	  HAL_UART_Transmit_DMA(&huart4,(uint8_t*)MSG, 20);      
+	 // HAL_UART_Transmit_DMA(&huart4,(uint8_t*)MSG, 20);      
 		
     /* USER CODE END WHILE */
 
